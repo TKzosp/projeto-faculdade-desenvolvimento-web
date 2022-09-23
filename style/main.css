@@ -2,7 +2,7 @@
     --color-background-dark: #003366;
     --color-background-light: #ff9900;
     --color-font-light: #ff9900;
-    --color-font-extra-light: #ffff00;
+    --color-font-extra-light: #fffc00;
     --color-font-dark: #003366;
     --color-border-blue-dark: #0f0f3de7;
 }
@@ -17,53 +17,57 @@
 body {
     font-family: 'Inter', sans-serif;
 }
-/* partes que são display flex */
-.aqueles-negocinhos-ai-embaixo,
-.features,
-.about-us,
-.how-it-works,
-.user-review,
-.contact-us {
-    display: flex;
-}
-
-/* Fundo azul */
-.header,
-.about-us,
-.user-review,
-footer {
-    background-color: var(--color-background-dark);
-    color: var(--color-font-light);
-}
-
-/* Fundo amarelo */
-.features,
-.contact-us,
-.how-it-works {
-    background-color: var(--color-background-light);
-    color: var(--color-font-dark);
-}
-
-/* Partes com borda */
-.about-us,
-.user-review,
-footer {
-    border: 1px solid var(--color-border-blue-dark);
-}
-
 .header {
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px;
+    background-color: var(--color-background-dark);
+    color: var(--color-font-light);
 }
-.header h1,
 .header h4,
 .header .botoes,
 .header .aqueles-negocinhos-ai-embaixo {
     margin: 10px;
 }
+.logo {
+    width: 400px;
+    height: 200px;
+}
 .header h1 {
     align-items: center;
+    padding: 30px;
+}
+
+form {
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.botoes input {
+    padding: 10px 15px;
+    border-radius: 2px;
+    text-decoration: none;
+    border: none;
+    justify-content: space-between;
+}
+.botoes button {
+    padding: 10px 15px;
+    border-radius: 2px;
+    text-decoration: none;
+    border: none;
+    background-color: var(--color-font-extra-light);
+}
+
+.features {
+    height: 450px;
+    background-color: var(--color-background-light);
+    color: var(--color-font-dark);
+    border: 1px solid #fffc00;
+    display: grid;
+    justify-content: center;
+}
+.card-feature-upper,
+.card-feature-below {
+    display: flex;
 }
