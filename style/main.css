@@ -66,6 +66,7 @@ form {
     border: 1px solid #fffc00;
     display: grid;
     justify-content: center;
+    padding: 50px 10px;
 }
 .subtitle {
     display: flex;
@@ -80,8 +81,21 @@ form {
 .card-feature-upper div,
 .card-feature-below div {
     display: flex;
+    gap: 16px;
+    max-width: 250px;
+    align-items: center;
+}
+
+.features span,
+.features img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 .imagens-features {
     width: 80px;
     height: 80px;
+    border-radius: 50px;
+    border: 1px solid var(--color-font-extra-light);
 }
