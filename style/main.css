@@ -99,3 +99,30 @@ form {
     border-radius: 50px;
     border: 1px solid var(--color-font-extra-light);
 }
+
+.about-us {
+    background-color: var(--color-background-dark);
+    color: var(--color-font-light);
+    height: 450px;
+    display: flex;
+    margin: auto;
+}
+
+.about-us div {
+    width: auto;
+}
+.about-us img {
+    width: 500px;
+    height: 300px;
+    margin: auto 150px auto auto;
+}
+
+.about-us .text {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    justify-items: center;
+    align-items: center;
+    gap: 32px;
+    flex-direction: column;
+}
